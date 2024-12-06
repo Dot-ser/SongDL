@@ -1,0 +1,136 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background: url(background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    overflow-x: hidden;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+/* Container for the logo */
+.logo {
+    display: inline-block; /* Aligns inline with other elements */
+    max-width: 100px; /* Restricts the logo's maximum width */
+    margin: 10px; /* Adds spacing around the logo */
+}
+  
+/* Logo image styles */
+.logo img {
+    width: 100%; /* Makes the logo responsive */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes extra spacing below the image */
+    border: 2px solid #ffffff; /* Optional: adds a border around the logo */
+    border-radius: 5px; /* Optional: adds rounded corners */
+}
+  
+h1 {
+    font-size: 1.8rem;
+    margin: 20px 0;
+    font-family: monospace;
+}
+
+.description {
+    font-family: monospace;
+    font-size: 1rem;
+    margin: 10px 0 20px;
+    opacity: 0.8;
+}
+
+form {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, select, button {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input {
+    background-color: #222;
+    color: white;
+}
+
+select {
+    background-color: #333;
+    color: white;
+}
+
+button {
+    border: none;
+    border: 3px solid #ff02ea;
+    background-color: #03010338;
+    box-shadow: 0 0 5px #ef97e8;
+    border-radius: 50px;
+    color: wheat;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f477ff;
+    box-shadow: 0 0 10px #ef97e8, 0 0 20px #ef97e8, 0 0 20px #fff inset;
+}
+
+.kill-form {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.kill-btn {
+    border: none;
+    background-color: #03010338;
+    box-shadow: 0 0 5px #ff5555;
+    cursor: pointer;
+}
+
+.kill-btn:hover {
+    background-color: #ff5555;
+    box-shadow: 0 0 10px #ff5555, 0 0 20px #ff5555, 0 0 20px #ff5555 inset;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.footer-text {
+    margin: 10px 0;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .logo {
+        max-width: 100px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input, select, button {
+        width: 90%;
+    }
+}
