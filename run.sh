@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# Ensure the script is run with superuser privileges
-if [[ $EUID -ne 0 ]]; then
-   echo "This script must be run as root. Use 'sudo ./script_name.sh'."
-   exit 1
-fi
 
 # Update package list and install ffmpeg
 echo "Installing ffmpeg..."
