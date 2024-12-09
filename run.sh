@@ -28,7 +28,7 @@ ssh -R "${SUBDOMAIN}:80:localhost:5000" serveo.net &
 # Run app.py
 if [[ -f "app.py" ]]; then
     echo "Running app.py..."
-    python3 app.py
+    gunicorn -w 4 app:app
 else
     echo "app.py not found in the current directory. Exiting."
 fi
