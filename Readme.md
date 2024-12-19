@@ -16,7 +16,49 @@ This repository contains a simple, user-friendly web application for downloading
 
 Clone the repository.
 ```
-$ git clone https://github.com/Dot-ser/SongDL-Web
+$ git clone https://github.com/Dot-ser/SongDL
 ```
+#Build
+```
+pip install -r requirements.txt
+```
+# Run
+```
+python3 app.py
+```
+# OR
+
+```
+gunicorn app:app
+```
+> May required To add You cookies a cookies.txt
+> > 1. Go to browser 
+> > 2. Go to youtube.com and login with fake account
+> > 3. Via using cookies editor extenion ,Export as Netscope format 
+> > 4. Save and cookies.txt and Upload to github respo Root
+# For Google CouldShell Depoly
+
+
+
+
+## Setup Instructions:
+Generate SSH KEY for Serveo
+```
+$ ssh-keygen
+```
+serveo.net  authentication for subdomain
+```
+$ ssh -R your-domain.com:80:localhost:5000 serveo.net
+```
+
+Clone the repository.
+```
+$ git clone https://github.com/Dot-ser/SongDL
+```
+> install the required dependencies using 
+```
+$ bash run.sh
+```
+> > No cookies required
 > install the required dependencies using 
 >TIME TO ENJOY ! SpotDL
