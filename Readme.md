@@ -31,7 +31,7 @@ python3 app.py
 ```
 gunicorn app:app
 ```
-> May required To add You cookies a cookies.txt
+> May required To add  cookies as cookies.txt
 > > 1. Go to browser 
 > > 2. Go to youtube.com and login with fake account
 > > 3. Via using cookies editor extenion ,Export as Netscope format 
