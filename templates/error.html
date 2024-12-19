@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page</title>
+    <link rel="icon" href="{{ url_for('static', filename='logo.png') }}" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #050505;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+            text-align: center;
+        }
+        .error-container {
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .error-container h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .error-container p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+        .error-container img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1>We Have Run Into an Error</h1>
+        <p>Please try another resolution or come back later.</p>
+        <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="Error gif">
+    </div>
+</body>
+</html>

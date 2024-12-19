@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YT Down</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Download Songs and Videos with YT Down , Made By DOT_007.">
+    <meta name="author" content="DOT_007">
+    <meta name="keywords" content="Song Download Using Name ,YT Link ">
+    <link rel="icon" href="{{ url_for('static', filename='logo.png') }}" type="image/png">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="../static/logo.png" alt="Company Logo">
+          </div>
+          
+        <h1>Download Songs and Videos</h1>
+        <p class="description">
+            Enter the name of a song or a YouTube URL, choose the format, and download instantly!
+        </p>
+        <form method="POST" action="/">
+            <input type="text" name="query" placeholder="Enter song name or YouTube URL" required>
+            <select name="format">
+                <option value="video">Video</option>
+                <option value="audio">Audio</option>
+               
+            </select><br><br>
+            
+            <label for="resolution">Select Resolution:</label><br>
+            <select id="resolution" name="resolution">
+                <option value="360p">360p</option>
+                <option value="1080p">1080p</option>
+                <option value="Normal">Best Available</option>
+            </select><br><br>
+            </select>
+            <button type="submit">Download</button>
+        </form>
+    </div>
+    <footer>
+
+    <!-- Spinner animation -->
+    <div class="spinner" id="loading-spinner"></div>
+    <p class="loading-text" id="loading-text">Downloading... Please wait.</p>
+        <p class="footer-text">© 2024 YT Down<br><span class="heart">DOT_007❤️</span></p>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
